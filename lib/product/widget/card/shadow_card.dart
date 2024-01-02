@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import '../shadow/card_shadow.dart';
 import 'package:kartal/kartal.dart';
 
@@ -20,4 +20,4 @@ class ShadowCard extends Container {
     decoration: BoxDecoration(
         shape: BoxShape.circle, boxShadow: [CardShadow(context)], color: context.colorScheme.onSecondary),
   );
-}
+}*/

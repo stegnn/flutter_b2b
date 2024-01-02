@@ -48,13 +48,13 @@ IconButton _messageButton (BuildContext context){
         Image.asset(ImageConstatns.instance.iconPath.message),
         Positioned(bottom: -5,left: -5,child: CircleAvatar(
           radius: WidgetSize.circleSmallHeight / 2,
-          backgroundColor: context.colorScheme.error,
+          backgroundColor: context.general.colorScheme.error,
           child: FittedBox(
             child:  Padding(
               padding: PagePaddingAll.halfNormal(),
               child: FittedBox(
                   child: Text('5',
-                      style: context.textTheme.subtitle1?.copyWith(color: context.colorScheme.onSecondary))),
+                      style: context.general.textTheme.subtitle1?.copyWith(color: context.general.colorScheme.onSecondary))),
               ),
             ),
           )

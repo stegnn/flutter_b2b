@@ -1,4 +1,4 @@
-import 'package:cached_network_image/cached_network_image.dart';
+/*import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/src/context_extension.dart';
 
@@ -11,22 +11,22 @@ class ProductNormalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: context.paddingLow,
+        padding: context.general.paddingLow,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(child: CachedNetworkImage(imageUrl: model.image ?? '')),
             Text(
               '${model.title}',
-              style: context.textTheme.bodyText1,
+              style: context.general.textTheme.bodyLarge,
             ),
             Text(
               '${model.money}',
-              style: context.textTheme.bodyText2,
+              style: context.general.textTheme.bodyMedium,
             ),
           ],
         ),
       ),
     );
   }
-}
+*/

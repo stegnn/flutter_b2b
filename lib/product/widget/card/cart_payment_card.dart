@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import '../../utility/padding/padding_only.dart';
 import '../../utility/padding/padding_symetrict.dart';
 import '../../utility/space_utility.dart';
@@ -26,19 +26,19 @@ class CardPaymentCard extends StatelessWidget {
                           color: Colors.transparent,
                           shape: BoxShape.circle,
                           elevation: 5,
-                          child: CircleAvatar(backgroundColor: context.colorScheme.onSecondary)),
+                          child: CircleAvatar(backgroundColor: context.general.colorScheme.onSecondary)),
                     ))),
             SizedBox(width: 5.w),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Faux Sued Ankle Boots', style: context.textTheme.subtitle1),
-                  Text('7, Hot Pink', style: context.textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w100)),
+                  Text('Faux Sued Ankle Boots', style: context.general.textTheme.subtitle1),
+                  Text('7, Hot Pink', style: context.general.textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w100)),
                   const SizedBox(height: SpaceUtility.spacingM),
                   Text(
                     '\$49.99',
-                    style: context.textTheme.subtitle1?.copyWith(color: context.colorScheme.onError),
+                    style: context.general.textTheme.subtitle1?.copyWith(color: context.general.colorScheme.onError),
                   ),
                   const SizedBox(height: SpaceUtility.spacingM),
                   Row(
@@ -60,4 +60,4 @@ class CardPaymentCard extends StatelessWidget {
       ),
     );
   }
-}
+}*/

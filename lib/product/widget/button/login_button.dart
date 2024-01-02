@@ -22,16 +22,16 @@ class _LoginButtonState extends State<LoginButton> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: context.paddingLow,
+      padding: context.padding.low,
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(primary: context.colorScheme.onError, padding: context.paddingLow),
+        style: ElevatedButton.styleFrom(backgroundColor: context.general.colorScheme.onError, padding: context.padding.low),
         onPressed: () async {
           _changeLoading();
           await widget.onCompleted();
           _changeLoading();
         },
         child: Center(
-          child: _isLoading ? CircularProgressIndicator(color: context.colorScheme.onSecondary) : Text(widget.title),
+          child: _isLoading ? CircularProgressIndicator(color: context.general.colorScheme.onSecondary) : Text(widget.title),
         ),
       ),
     );

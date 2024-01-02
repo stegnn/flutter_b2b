@@ -21,7 +21,7 @@ class MenuSettingCard extends StatelessWidget {
     return ListTile(
       minLeadingWidth: kZero,
       onTap: () {},
-      leading: Image.asset(assetIconPath, color: context.colorScheme.onBackground),
+      leading: Image.asset(assetIconPath, color: context.general.colorScheme.onBackground),
       title: Column(
         children: [
           Row(
@@ -29,12 +29,12 @@ class MenuSettingCard extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: context.textTheme.subtitle2?.copyWith(color: context.colorScheme.onBackground),
+                style: context.general.textTheme.titleSmall?.copyWith(color: context.general.colorScheme.onBackground),
               ),
               const Spacer(),
               Text(
                 rightDescription ?? '',
-                style: context.textTheme.subtitle2?.copyWith(color: context.colorScheme.onBackground),
+                style: context.general.textTheme.titleSmall?.copyWith(color: context.general.colorScheme.onBackground),
               ),
               SizedBox(
                 height: WidgetSize.cardSmallWidth,
@@ -52,11 +52,11 @@ class MenuSettingCard extends StatelessWidget {
   FittedBox _rightBoxArrow(BuildContext context) {
     return FittedBox(
       child: TextButton(
-          style: TextButton.styleFrom(shape: const CircleBorder(), backgroundColor: context.colorScheme.primary),
+          style: TextButton.styleFrom(shape: const CircleBorder(), backgroundColor: context.general.colorScheme.primary),
           onPressed: () {},
           child: Icon(
             Icons.chevron_right_outlined,
-            color: context.colorScheme.onPrimary,
+            color: context.general.colorScheme.onPrimary,
           )),
     );
   }

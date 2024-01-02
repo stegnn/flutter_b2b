@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../product/init/lang/locale.keys.g.dart';
 import '../../cart_payment/cart_payment_view.dart';
 import '../../more/more_view.dart';
 
@@ -12,13 +13,11 @@ class _TabModel {
   final String title;
   final IconData icon;
 
-  _TabModel(this.page,{required this.title, required this.icon});
-
-
+  _TabModel(this.page, {required this.title, required this.icon});
 }
 
 class TabModels {
-  late final List <_TabModel> tabItems;
+  late final List<_TabModel> tabItems;
 
   TabModels.create() {
     tabItems = [

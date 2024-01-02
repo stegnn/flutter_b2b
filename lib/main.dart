@@ -1,4 +1,5 @@
 import 'package:b2b_service_continiue/product/init/navigation/navigation_manager.dart';
+import 'package:b2b_service_continiue/product/init/theme/app_theme.dart';
 import 'package:b2b_service_continiue/view/shop/tab/shop_tab_view.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
